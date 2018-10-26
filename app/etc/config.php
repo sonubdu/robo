@@ -125,6 +125,5 @@ return array (
     'Magento_WidgetSampleData' => 1,
     'Magento_Wishlist' => 1,
     'Magento_WishlistSampleData' => 1,
-    'One97_Paytm' => 1,
   ),
 );
