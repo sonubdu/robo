@@ -1,0 +1,55 @@
+<?php
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+
+// @codingStandardsIgnoreFile
+
+?>
+<div class="block newsletter">
+<div class="desk_news">
+    <div class="title"><strong><?= $block->escapeHtml(__('Newsletter')) ?></strong></div>
+    <div class="newsletter-social">
+      <ul>
+        <li><a href="https://www.facebook.com/Robobulltech"><img src="//cdn.shopify.com/s/files/1/2334/2135/t/54/assets/fbnl.png?10661961239893074834"></a></li>
+        <li><a href="https://www.instagram.com/robobull_india/"><img src="//cdn.shopify.com/s/files/1/2334/2135/t/54/assets/instanl.png?10661961239893074834"></a></li>
+      </ul>
+    </div>
+    <p>Make sure that you’re always the first who receive our latest news and hottest promotions</p>
+    </div>
+    <div class="mob_news">
+    <div class="title"><strong><?= $block->escapeHtml(__("LET'S BE FRIENDS")) ?></strong></div>
+    <div class="newsletter-social">
+      <ul>
+        <li><a href="https://www.facebook.com/Robobulltech"><img src="/pub/media/logo/stores/1/facebook.png"></a></li>
+        <li><a href="https://www.instagram.com/robobull_india/"><img src="/pub/media/logo/stores/1/insta.png"></a></li>
+      </ul>
+    </div>
+    <p>join our mailing list and enjoy special offers just for you.</p>
+    </div>
+    <div class="content">
+        <form class="form subscribe"
+            novalidate
+            action="<?php /* @escapeNotVerified */ echo $block->getFormActionUrl() ?>"
+            method="post"
+            data-mage-init='{"validation": {"errorClass": "mage-error"}}'
+            id="newsletter-validate-detail">
+            <div class="field newsletter">
+                <label class="label" for="newsletter"><span><?php /* @escapeNotVerified */ echo __('Sign Up for Our Newsletter:') ?></span></label>
+                <div class="control">
+                    <input name="email" type="email" id="newsletter"
+                                placeholder="<?php /* @escapeNotVerified */ echo __('Enter your email address') ?>"
+                                data-validate="{required:true, 'validate-email':true}"/>
+                </div>
+            </div>
+            <div class="actions">
+                <button class="action subscribe primary" title="<?php /* @escapeNotVerified */ echo __('Submit') ?>" type="submit">
+                    <span><?php /* @escapeNotVerified */ echo __('Subscribe') ?></span>
+                </button>
+            </div>
+        </form>
+    </div>
+    
+    
+</div>

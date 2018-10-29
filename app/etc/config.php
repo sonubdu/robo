@@ -126,5 +126,6 @@ return array (
     'Magento_Wishlist' => 1,
     'Magento_WishlistSampleData' => 1,
     'One97_Paytm' => 1,
+    'PayU_EasyPlus' => 1,
   ),
 );
