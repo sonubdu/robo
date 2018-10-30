@@ -49,7 +49,7 @@ $helper = $this->helper('Magento\Search\Helper\Data');
           <a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
           </div>
         <div class="sign-inimg">
-          <p> sign in <span><img src="../images/userl.png" class="nrml-userimg"> <img src="../images/userhl.png" class="hover-userimg"> </span> </p>
+          <p> sign in <span><img src=" <?php echo $block->getViewFileUrl('/images/userl.png'); ?>" class="nrml-userimg"> <img src="../images/userhl.png" class="hover-userimg"> </span> </p>
           <div class="login-data">
             <ul>
               <li> <i class="fa fa-user-o" aria-hidden="true"></i> <a href="<?php echo $block->getUrl('customer/account') ?>">your account</a> </li>
