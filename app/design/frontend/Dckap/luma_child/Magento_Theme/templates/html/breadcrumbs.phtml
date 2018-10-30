@@ -28,9 +28,16 @@
 </div>
 <?php endif; ?>
 <div class="desktop">   
-   <div class="pdpbanner1" style="background-image:url('https://cdn.shopify.com/s/files/1/2334/2135/t/52/assets/PDPDesktop5.png?2491574102776405483')">
+   <div class="pdpbanner1" style="background-image:url('<?php echo $block->getViewFileUrl('/images/PDPDesktop5.png');?>')">
 
    </div>
 </div>
+
+<div class="mobile">
+   <div class="pdpbanner1">
+       <img src="<?php echo $block->getViewFileUrl('/images/PDPMobile5.png');?>">
+     </div>
+  
+  </div>
 
 
