@@ -684,8 +684,8 @@ svg.icon-close {color: #3d4246;}
     box-shadow: none !important;
     line-height: 8px;
 }
-.nav-sections {
-	top:57px;}
+/*.nav-sections {
+	top:57px;}*/
 .nav-toggle { display:none !important}
 .nav-sections-item-title { display:none !important}
 .footer .block .title:after {
