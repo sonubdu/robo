@@ -150,7 +150,8 @@
 	-moz-transition: all 0.3s linear 0s;
 	-webkit-transition: all 0.3s linear 0s;
 	-ms-transition: all 0.3s linear 0s;
-	-o-transition: all 0.3s linear 0s
+	-o-transition: all 0.3s linear 0s;
+	text-transform:capitalize
 }
 .robobullFooterItem a:hover {
 	color: #ff0000 !important;
