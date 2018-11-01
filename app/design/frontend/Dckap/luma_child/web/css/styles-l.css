@@ -17,13 +17,13 @@
     margin-left:0px;
     margin-right:0px
 }
-.product.info.detailed {
+/*.product.info.detailed {
 	clear: both;
 	margin-bottom: 30px;
 	width: 50%;
 	margin-top: -60px;
 	display: inline-block;
-}
+}*/
 .sign-inimg {
 	cursor: pointer;
 	position: relative;
@@ -2529,7 +2529,7 @@ html, body {
 	top: 8px
 }
 .logo img {
-	max-height: inherit
+	max-height: inherit;
 }
 .page-wrapper {
 	display: -webkit-flex;

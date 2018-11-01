@@ -44,33 +44,31 @@ $helper = $this->helper('Magento\Search\Helper\Data');
                         class="action search"> <span><i class="fa fa-search" aria-hidden="true"></i></span> </button>
           <div id="search_autocomplete" class="search-autocomplete"></div>
           <?php echo $block->getChildHtml() ?> </div>
-          <div class="mb">
-          <div class="wsh">
-          <a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+        <div class="mb">
+          <div class="wsh"> <a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a> </div>
+          <div class="sign-inimg desktop_sign">
+            <p> sign in <span><img src=" <?php echo $block->getViewFileUrl('/images/userl.png'); ?>" class="nrml-userimg"> <img src="<?php echo $block->getViewFileUrl('/images/userhl.png'); ?>" class="hover-userimg"> </span> </p>
+            <div class="login-data">
+              <ul>
+                <li> <i class="fa fa-user-o" aria-hidden="true"></i> <a href="<?php echo $block->getUrl('customer/account') ?>">your account</a> </li>
+                <li> <i class="fa fa-cube" aria-hidden="true"></i> <a href="<?php echo $block->getUrl('customer/account') ?>">your orders</a> </li>
+                <li> <i class="fa fa-heart-o" aria-hidden="true"></i> <a href="<?php echo $block->getUrl('wishlist') ?>">wishlist</a> </li>
+              </ul>
+              <p class="new-user"> If you are a new user</p>
+              <a href="<?php echo $block->getUrl('customer/account/create') ?>" id="customer_register_link">register</a> <a href="<?php echo $block->getUrl('customer/account/login') ?>" id="customer_login_link">Log in</a> </div>
           </div>
-        <div class="sign-inimg desktop">
-          <p> sign in <span><img src=" <?php echo $block->getViewFileUrl('/images/userl.png'); ?>" class="nrml-userimg"> <img src="<?php echo $block->getViewFileUrl('/images/userhl.png'); ?>" class="hover-userimg"> </span> </p>
-          <div class="login-data">
-            <ul>
-              <li> <i class="fa fa-user-o" aria-hidden="true"></i> <a href="<?php echo $block->getUrl('customer/account') ?>">your account</a> </li>
-              <li> <i class="fa fa-cube" aria-hidden="true"></i> <a href="<?php echo $block->getUrl('customer/account') ?>">your orders</a> </li>
-              <li> <i class="fa fa-heart-o" aria-hidden="true"></i> <a href="<?php echo $block->getUrl('wishlist') ?>">wishlist</a> </li>
-            </ul>
-            <p class="new-user"> If you are a new user</p>
-            <a href="<?php echo $block->getUrl('customer/account/create') ?>" id="customer_register_link">register</a> <a href="<?php echo $block->getUrl('customer/account/login') ?>" id="customer_login_link">Log in</a> </div>
+          <div class="sign-inimg mobile_sign">
+            <p> sign in <span><img src=" <?php echo $block->getViewFileUrl('/images/userl.png'); ?>" class="nrml-userimg"> <img src="<?php echo $block->getViewFileUrl('/images/userhl.png'); ?>" class="hover-userimg"> </span> </p>
+            <div class="login-data">
+              <ul>
+                <li> <i class="fa fa-user-o" aria-hidden="true"></i> <a href="<?php echo $block->getUrl('customer/account') ?>">your account</a> </li>
+                <li> <i class="fa fa-cube" aria-hidden="true"></i> <a href="<?php echo $block->getUrl('customer/account') ?>">your orders</a> </li>
+                <li> <i class="fa fa-heart-o" aria-hidden="true"></i> <a href="<?php echo $block->getUrl('wishlist') ?>">wishlist</a> </li>
+              </ul>
+              <p class="new-user"> If you are a new user</p>
+              <a href="<?php echo $block->getUrl('customer/account/create') ?>" id="customer_register_link">register</a> <a href="<?php echo $block->getUrl('customer/account/login') ?>" id="customer_login_link">Log in</a> </div>
+          </div>
         </div>
-        <div class="sign-inimg mobile">
-          <p> sign in <span><img src=" <?php echo $block->getViewFileUrl('/images/userl.png'); ?>" class="nrml-userimg"> <img src="<?php echo $block->getViewFileUrl('/images/userhl.png'); ?>" class="hover-userimg"> </span> </p>
-          <div class="login-data">
-            <ul>
-              <li> <i class="fa fa-user-o" aria-hidden="true"></i> <a href="<?php echo $block->getUrl('customer/account') ?>">your account</a> </li>
-              <li> <i class="fa fa-cube" aria-hidden="true"></i> <a href="<?php echo $block->getUrl('customer/account') ?>">your orders</a> </li>
-              <li> <i class="fa fa-heart-o" aria-hidden="true"></i> <a href="<?php echo $block->getUrl('wishlist') ?>">wishlist</a> </li>
-            </ul>
-            <p class="new-user"> If you are a new user</p>
-            <a href="<?php echo $block->getUrl('customer/account/create') ?>" id="customer_register_link">register</a> <a href="<?php echo $block->getUrl('customer/account/login') ?>" id="customer_login_link">Log in</a> </div>
-        </div>
-      </div>
       </div>
     </form>
   </div>

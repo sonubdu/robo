@@ -80,7 +80,7 @@
     line-height: 24px;
     text-transform: capitalize;
 }
-.desktop > .pdpbanner1 {
+.desktop_bread > .pdpbanner1 {
     width: 100%;
     height: 94px;
     background-repeat: no-repeat;
@@ -423,13 +423,33 @@ input:not([disabled]):focus {
 .wsh {
 	display: none;
 }
-.mobile { display:none;}
-.mobile > .pdpbanner1 {
-    width: 100%;
-    height: 56px;
-	display:inline-block
+.fotorama__thumb-border {
+    border: 1px solid #3d4246 !important;
 }
+ .fotorama__nav--thumbs .fotorama__nav__frame {
+    padding: 2px 5px !important;
+}
+.fotorama__thumb-border { background:transparent !important}
+.fotorama__nav-wrap .fotorama_horizontal_ratio .fotorama__img {
+    max-height: 74px;
+    max-width: 74px;
+	    top: 7px;
+}
+.fotorama__thumb {
+    background-color: #fafafa !important;
+}
+.fotorama__stage.fotorama__shadows--right:after, .fotorama__nav.fotorama__shadows--right:after, .fotorama__stage.fotorama__shadows--left:before, .fotorama__nav.fotorama__shadows--left:before {
+	background:transparent !important;}
+	.fotorama__arr--disabled { opacity:1 !important;}
+	
 @media only screen and (min-width:768px) {
+	.fotorama__nav-wrap .fotorama__nav--thumbs { max-width:418px;}
+	.desktop_bread { display:none;}
+	.catalog-product-view .desktop_bread { display:block !important}
+	.mobile_bread { display:none;}
+	.mobile { display:none;}
+	.mobile_sign { display:none;}
+.desktop_sign { display:block;}
 	.sign-inimg p {
 		margin-right:0;
 		}
@@ -447,71 +467,21 @@ footer.for-mobile {
 	opacity: 1 !important
 }
 }
-@media only screen and (min-width:768px) and (max-width:992px) {
-	.newsletter-social {
-    position: absolute !important;
-    right: 1% !important;
-    top: 85px !important;
-}
-	}
- @media only screen and (min-width:768px) and (max-width:1100px) {
-.service .container {
-	padding: 0 15px;
-}
-.service .badge {
-	width: 31.9%;
-	margin: 0px 5px;
-	padding: 10px 0px !important;
-}
-.robobullTollFree {
-	position: absolute;
-	right: 0;
-	top: auto;
-	text-align: center;
-	bottom: 30px;
-	left: 0;
-}
-.robobullFooterUpper {
-	padding: 40px 0 80px;
-}
-.robobullFooterMenu .robobullFooterItem, .robobullFooterItem {
-	display: inline-block;
-	margin: 0 13px;
-	font-size: 16px;
-	font-weight: normal;
-}
-.robobullCopyright {
-	position: absolute;
-	right: 0;
-	top: auto;
-	text-align: center;
-	bottom: 8px;
-	left: 0;
-}
-.robobullTollFree span {
-	font-size: 13px;
-}
-.copyright {
-	padding: 16px 0px 30px !important;
-}
-}
-@media only screen and (min-width:1101px) and (max-width:1285px) {
-.robobullFooterMenu .robobullFooterItem, .robobullFooterItem {
-	display: inline-block;
-	margin: 0 15px;
-	font-size: 16px;
-}
-}
-@media only screen and (max-width:992px) {
-.newsletter-social {
-	position: relative;
-	right: 0;
-	top: 20px;
-}
-}
 @media only screen and (max-width:767px) {
 	
 /*****************************footer css********************/
+.catalog-product-view .mobile_bread {
+    display: block !important;
+}
+.mobile_bread { display:none;}
+.desktop_bread { display: none !important;}
+.mobile_bread > .pdpbanner1 {
+    width: 100%;
+    height: 56px;
+	display:inline-block
+}
+.mobile_sign { display:block;}
+.desktop_sign { display:none !important;}
 .desktop { display:none !important}
 .mobile { display:block;}
 footer.for-mobile {
@@ -873,6 +843,7 @@ svg.icon-close {color: #3d4246;}
 .desk_logo {
 	display: none !important;
 }
+
 .logo {
 	background-image: url("../images/logo2.png");
 	background-size: 100%;
@@ -947,3 +918,66 @@ svg.icon-close {color: #3d4246;}
 	float: none
 }
 }
+@media only screen and (min-width:768px) and (max-width:992px) {
+	.newsletter-social {
+    position: absolute !important;
+    right: 1% !important;
+    top: 85px !important;
+}
+	}
+ @media only screen and (min-width:768px) and (max-width:1100px) {
+.service .container {
+	padding: 0 15px;
+}
+.service .badge {
+	width: 31.9%;
+	margin: 0px 5px;
+	padding: 10px 0px !important;
+}
+.robobullTollFree {
+	position: absolute;
+	right: 0;
+	top: auto;
+	text-align: center;
+	bottom: 30px;
+	left: 0;
+}
+.robobullFooterUpper {
+	padding: 40px 0 80px;
+}
+.robobullFooterMenu .robobullFooterItem, .robobullFooterItem {
+	display: inline-block;
+	margin: 0 13px;
+	font-size: 16px;
+	font-weight: normal;
+}
+.robobullCopyright {
+	position: absolute;
+	right: 0;
+	top: auto;
+	text-align: center;
+	bottom: 8px;
+	left: 0;
+}
+.robobullTollFree span {
+	font-size: 13px;
+}
+.copyright {
+	padding: 16px 0px 30px !important;
+}
+}
+@media only screen and (min-width:1101px) and (max-width:1285px) {
+.robobullFooterMenu .robobullFooterItem, .robobullFooterItem {
+	display: inline-block;
+	margin: 0 15px;
+	font-size: 16px;
+}
+}
+@media only screen and (max-width:992px) {
+.newsletter-social {
+	position: relative;
+	right: 0;
+	top: 20px;
+}
+}
+

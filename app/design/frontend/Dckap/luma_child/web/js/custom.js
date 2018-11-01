@@ -7,14 +7,14 @@ require(['jquery'],function($){
 });
 
 require(['jquery'],function($){
-$(".mobile-nav--open").click(function(){
-    $("html").toggleClass("nav-open");
-	$("header").toggleClass("mobile-header-fixed");	
-});
-$(".mobile-nav-close-icon").click(function(){
-    $("html").toggleClass("nav-open");
-	$("header").toggleClass("mobile-header-fixed");	
-});
+    $(".mobile-nav--open").click(function(){
+           $("html").toggleClass("nav-open");
+	       $("header").toggleClass("mobile-header-fixed");	
+    });
+    $(".mobile-nav-close-icon").click(function(){
+       	   $("html").toggleClass("nav-open");
+	       $("header").toggleClass("mobile-header-fixed");	
+    });
 });
 
 //require(['jquery'],function($){
